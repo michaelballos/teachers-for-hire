@@ -10,6 +10,7 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 import ChevronDown from '../../atoms/ChevronDown';
 import { useStyles } from './Header.styles';
+import ColorSchemeToggle from '../../atoms/ColorSchemeToggle/ColorSchemeToggle';
 
 interface HeaderSearchProps {
   links: {
@@ -79,6 +80,7 @@ export default function Header({ links }: HeaderSearchProps) {
             spacing={5}
             className={classes.links}
           >
+            <ColorSchemeToggle />
             {items}
           </Group>
           <Burger
